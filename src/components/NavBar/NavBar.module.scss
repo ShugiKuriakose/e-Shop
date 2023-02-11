@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+
+  height: 5vh;
+}
+
+.nav_link {
+  margin-left: 15px;
+  color: white;
+  padding: 15px;
+  font-size: 30px;
+}

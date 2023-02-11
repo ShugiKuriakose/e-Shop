@@ -1,0 +1,33 @@
+.productCard {
+  width: 350px;
+  height: 550px;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+  cursor: grab;
+  transition: transform ease 300ms;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  img {
+    width: 200px;
+    height: 300px;
+  }
+  h2 {
+    color: black;
+  }
+}
+
+.heart__white {
+  color: black;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.heart__red {
+  color: red;
+  cursor: pointer;
+  font-size: 60px;
+}
