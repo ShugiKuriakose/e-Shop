@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./containers/HomePage/HomePage";
 import Products from "./containers/Products/Products";
 import ProductPage from "./containers/ProductPage/ProductPage";
+import Cart from "./containers/Cart/Cart";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Products" element={<Products />} />
-        <Route path="/Cart" element={<h1>Cart</h1>} />
+        <Route path="/Cart" element={<Cart />} />
         <Route path="/Products/products/:idDoc" element={<ProductPage />} />
       </Routes>
     </BrowserRouter>

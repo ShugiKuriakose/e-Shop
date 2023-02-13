@@ -1,70 +1,90 @@
 .carousel {
-  width: 100%;
-  height: 100%;
   background-color: rgb(211, 166, 166);
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
+
+  width: 1400px;
+  @media screen and (max-width: 1000px) {
+    width: 800px;
+  }
 
   h1 {
-    background-color: aliceblue;
-    width: 50%;
-    margin: auto;
+    background-color: rgb(211, 166, 166);
+    text-align: center;
+    margin: 20px;
     padding: 20px;
-    border: 2px solid black;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
   }
-}
 
-.carouselProducts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(211, 166, 166);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
+  .carouselProducts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      margin: auto;
+      img {
+        padding: 10px;
+        height: 300px;
+      }
+    }
 
-  img {
-    padding: 20px;
-    width: 50%;
-    height: 80%;
+    img {
+      padding: 100px;
+      height: 600px;
+    }
   }
-}
 
-.leftArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 32px;
-  font-size: 65px;
-  font-weight: bolder;
+  .leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -70%);
+    left: 62px;
+    font-size: 65px;
+    font-weight: bolder;
 
-  color: #000;
-  z-index: 1;
-  cursor: pointer;
-}
-.rightArrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 32px;
-  font-size: 65px;
-  color: #000;
-  z-index: 1;
-  cursor: pointer;
-  font-weight: bolder;
-}
+    color: #000;
+    z-index: 1;
+    cursor: pointer;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -70%);
+    right: 62px;
+    font-size: 65px;
+    color: #000;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: bolder;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
 
-.dots {
-  font-size: 50px;
-  cursor: pointer;
-  margin: 10px;
-}
+  .dots {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px;
+  }
 
-.dotsContainer {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
+  .activeDot {
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px;
+    color: #524c4c;
+  }
+
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
 }

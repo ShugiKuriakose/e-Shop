@@ -5,21 +5,83 @@
   align-items: center;
   margin-top: 30px;
   transition: transform ease 300ms;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.productTitle {
+  padding: 30px;
+  margin: auto;
+  text-align: left;
+  background-color: #dbb4b4;
 }
 
 .productImage {
-  width: 40%;
   margin: 20px;
+
   padding: 20px;
 }
 .productDetails {
   width: 30%;
   margin: 20px;
   padding: 20px;
+
+  h2 {
+    font-size: 40px;
+  }
   p {
-    font-size: 20px;
+    font-size: 30px;
   }
   button {
-    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin: 40px;
+    margin-left: 0px;
+    padding: 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgb(110, 107, 107);
+      scale: 1.05;
+    }
+  }
+
+  .sizeButton {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    margin: 40px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgb(59, 58, 58);
+    }
+  }
+  .sizeButtonActive {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    margin: 40px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgb(59, 58, 58);
+  }
+
+  .sizeWarning {
+    display: none;
+    color: red;
+  }
+  .sizeWarningDisplay {
+    color: red;
   }
 }

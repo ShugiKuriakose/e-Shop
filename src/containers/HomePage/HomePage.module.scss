@@ -1,3 +1,12 @@
+.header {
+  h1 {
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    background-color: #dbb4b4;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -6,7 +15,7 @@
   width: 60%;
   height: 60%;
   margin: auto;
-  padding: 200px;
+  padding: 100px;
 
   border-radius: 10px;
 }

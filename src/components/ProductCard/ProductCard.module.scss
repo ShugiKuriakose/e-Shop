@@ -1,11 +1,17 @@
 .productCard {
-  width: 350px;
-  height: 550px;
-  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  height: 450px;
   margin: 20px;
-  padding: 10px;
+  margin-right: 80px;
+  margin-top: 80px;
+  padding: 20px;
   cursor: grab;
   transition: transform ease 300ms;
+  box-shadow: 5px 10px 5px 10px #dbb4b4;
+  border-radius: 15px;
 
   &:hover {
     scale: 1.05;
@@ -14,9 +20,47 @@
   img {
     width: 200px;
     height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   h2 {
     color: black;
+    text-align: center;
+  }
+}
+
+.productTitle {
+  margin-top: 60px;
+  padding: 2px;
+  margin: auto;
+  margin-left: 15px;
+  width: 500px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  padding: 1px;
+  font-size: 20px;
+  margin-right: 10px;
+
+  button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 15px;
+    &:hover {
+      scale: 1.05;
+      background-color: rgb(110, 107, 107);
+    }
   }
 }
 
@@ -24,10 +68,14 @@
   color: black;
   cursor: pointer;
   font-size: 60px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .heart__red {
   color: red;
+  margin: 0px;
+  padding: 0px;
   cursor: pointer;
   font-size: 60px;
 }
